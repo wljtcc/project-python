@@ -37,6 +37,8 @@ def botTelegram(bot_message):
     response = requests.get(send_text)
     return response.json()
 
+# Send Date / Time
 botTelegram(dateTime)
+# Send Crypto Currency Values
 getCoins()
 botTelegram("=====================================")
