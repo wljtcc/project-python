@@ -1,0 +1,21 @@
+FLASK_APP_NAME=demo
+FLASK_ENV=development
+FLASK_KEY=base64:jfw6G4ZurxOb3ph2uH+CEQbRM0sPdz1/5sK2w6RfF8w=
+FLASK_DEBUG=true
+
+# App Config Connection
+FLASK_RUN_HOST=0.0.0.0
+FLASK_RUN_PORT=5000
+
+# Database Config Connection
+DB_CONNECTION=mysql
+DB_HOST=localhost
+DB_PORT=3306
+DB_DATABASE=flask
+DB_USERNAME=flask
+DB_PASSWORD=flask
+
+# DB_URL=DB_CONNECTION://DB_USERNAME:DB_PASSWORD@DB_HOST/DB_DATABASE
+# Postgres(postgresql://scott:tiger@localhost/mydatabase)
+# MySQL(mysql://scott:tiger@localhost/mydatabase)
+# Oracle(oracle://scott:tiger@127.0.0.1:1521/sidname)

@@ -1,5 +1,10 @@
+import os
 from app import app
 
 # Verifico se o arquivo é o principal, se for secundário, não executa
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    app.run(
+        host = os.getenv('FLASK_RUN_HOST'),
+        port = os.getenv('FLASK_RUN_PORT')
+        )
+    #app.run()
