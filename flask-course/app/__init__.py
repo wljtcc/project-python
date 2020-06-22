@@ -11,8 +11,12 @@ load_dotenv(dotenv_path)
 #app = Flask(os.getenv('FLASK_APP'))
 app = Flask(os.getenv('FLASK_APP_NAME'))
 
+# Configurando Conexão com o Banco de Dados
+DB_URL = os.getenv('DB_CONNECTION') + '://' + os.getenv('DB_USERNAME') + ':' + os.getenv('DB_PASSWORD') + '@' + os.getenv('DB_HOST') + ':' + os.getenv('DB_PORT') + '/' + os.getenv('DB_DATABASE')
+app.config['SQLALCHEMY_DATABASE_URI'] = DB_URL
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # Instanciando DB
-# db = SQLAlchemy(app)
+db = SQLAlchemy(app)
 
 # Importando o default.py
 from app.controllers import default
