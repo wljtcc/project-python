@@ -60,3 +60,10 @@
 
         Instalar dentro do ambiente virtual
         # venv/bin/pip3 install flask-sqlalchemy
+
+11. Migrations
+
+        Flask-Migrate
+        Flask-Script
+        # venv/bin/pip3 install flask-migrate
+        # venv/bin/pip3 install flask-script
