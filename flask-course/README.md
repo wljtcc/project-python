@@ -60,6 +60,7 @@
 
         Instalar dentro do ambiente virtual
         # venv/bin/pip3 install flask-sqlalchemy
+        # venv/bin/pip3 installpsycopg2-binary
 
 11. Migrations
 
@@ -67,3 +68,10 @@
         Flask-Script
         # venv/bin/pip3 install flask-migrate
         # venv/bin/pip3 install flask-script
+
+  11.1. Usando o MIGRATE, deverá ser modificado como a aplicação é executada:
+
+        # Para executar a aplicação: python3 run.py runserver
+        # Iniciar o Banco: python3 run.py db init
+        # Executar os migratios de comparação: python3 run.py db migrate
+        # Executar os migratios de inserção ou update: python3 run.py db upgrade
