@@ -19,10 +19,10 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 manager = Manager(app)
-SERVER_RUN = Server(HOST, PORT)
+SERVER_RUN = Server(host=app.config['HOST'], port=app.config['PORT'])
 manager.add_command('runserver', SERVER_RUN)
-
 manager.add_command('db', MigrateCommand)
 
 # Importando o default.py
 from app.controllers import default
+from app.controllers import login

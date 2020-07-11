@@ -60,7 +60,7 @@
 
         Instalar dentro do ambiente virtual
         # venv/bin/pip3 install flask-sqlalchemy
-        # venv/bin/pip3 installpsycopg2-binary
+        # venv/bin/pip3 install psycopg2-binary
 
 11. Migrations
 
@@ -75,3 +75,8 @@
         # Iniciar o Banco: python3 run.py db init
         # Executar os migratios de comparação: python3 run.py db migrate
         # Executar os migratios de inserção ou update: python3 run.py db upgrade
+
+12. Forms
+
+        # Para forms no Flask, deveremos instalar o FlaskWTF
+        # venv/bin/pip3 install flask-wtf

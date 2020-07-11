@@ -1,7 +1,7 @@
-import os
+from flask import render_template
 from app import app
-from flask import Flask
 
-@app.route('/')
-def index():
-    return "Hello World!!!"
+
+@app.route('/', defaults={'user':''})
+def default(user):
+    return render_template('index.html')
